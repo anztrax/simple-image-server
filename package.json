@@ -1,0 +1,8 @@
+{
+  "name": "simple-image-server-backend",
+  "version": "0.0.0.1",
+  "description": "simple image server backend",
+  "main": "index.js",
+  "author": "canine team",
+  "license": "MIT"
+}
