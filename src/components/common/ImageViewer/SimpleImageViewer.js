@@ -15,6 +15,7 @@ export default class SimpleImageViewer extends React.Component{
     const { imageUrl } = this.props;
     return (
       <div>
+        <h1>testing</h1>
         <img
           src={imageUrl}
           width={100}

@@ -1,5 +1,5 @@
-var path = require('path');
-var fs = require('fs');
+const path = require('path');
+const fs = require('fs');
 const NpmInstallPlugin = require('npm-install-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const config = require('./package').config;
@@ -7,7 +7,7 @@ const config = require('./package').config;
 module.exports = {
   entry: './src/client.js',
   output: {
-    path : 'public',
+    path : path.join(__dirname,'/public'),
     publicPath: '/',
     filename: 'bundle.js'
   },
