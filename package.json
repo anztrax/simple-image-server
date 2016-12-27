@@ -7,11 +7,13 @@
   "license": "MIT",
   "scripts": {
     "startServer": "nodemon index.js",
-    "start" : "npm run startServer"
+    "start": "npm run startServer"
   },
   "dependencies": {
+    "body-parser": "^1.15.2",
     "compression": "^1.6.2",
     "express": "^4.14.0",
+    "mongoose": "^4.7.5",
     "sharp": "^0.17.0"
   },
   "devDependencies": {
