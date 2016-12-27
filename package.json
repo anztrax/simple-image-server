@@ -1,0 +1,8 @@
+{
+  "name": "simple-image-server",
+  "version": "0.0.1",
+  "description": "simple server for serving image and format it",
+  "main": "server.js",
+  "author": "canine team",
+  "license": "MIT"
+}
