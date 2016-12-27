@@ -1,6 +1,5 @@
 var path = require('path');
 var fs = require('fs');
-var combineLoaders = require('webpack-combine-loaders');
 const NpmInstallPlugin = require('npm-install-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const config = require('./package').config;
