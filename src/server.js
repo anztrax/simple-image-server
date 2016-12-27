@@ -1,15 +1,9 @@
 import express from 'express';
 import path from 'path';
 import compression from 'compression';
-import React from 'react';
-import { renderToString } from 'react-dom/server';
-import { match, RouterContext } from 'react-router';
-import routes from './routes';
 const app = express();
 app.use(compression());
 
-// serve our static stuff like index.css
-app.use(express.static(path.join(__dirname, '../public')));
 
 // send all requests to index.html so browserHistory works
 app.get('*', (req, res) => {
@@ -27,18 +21,6 @@ app.get('*', (req, res) => {
     }
   })
 });
-
-function renderPage(appHtml) {
-  return `
-    <!doctype html public="storage">
-    <html>
-    <meta charset=utf-8/>
-    <link rel='stylesheet' href='/common.css' />
-    <title>My First React Router App</title>
-    <div id='app'>${appHtml}</div>
-    <script src="/bundle.js"></script>
-   `
-}
 
 const PORT = process.env.PORT || 3010;
 app.listen(PORT, function() {
